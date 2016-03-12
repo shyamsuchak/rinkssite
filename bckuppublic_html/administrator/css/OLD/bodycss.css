@@ -1,0 +1,97 @@
+.statusbox {
+	font-size: 13px;
+	font-family: Monaco, monospace;
+	width: 15em;
+}
+ul.boxy li { 
+margin: 0px;
+background-color:#FFCCFF!important;
+width:500px;
+cursor:crosshair; 
+}
+
+
+#phonetics td {
+	margin: 0px;
+	padding: 0px 1em;
+	vertical-align: top;
+	width: 300%;
+}
+#phonetic1 li, #phonetic2 li, #phonetic3 li { margin: 0px; }
+#phonetic2 li {
+	margin-bottom: 4px;
+}
+#phonetic3 { margin-top: -4px; }
+
+
+#phonetic3 li { 
+margin-top: 4px; 
+background-color:#FFCCFF!important;
+width:500px;
+cursor:move; 
+list-style-type:none;
+}
+
+#phonetic3 li ul{ 
+margin:0px;
+padding:0px;
+}
+
+#phonetic3 li ul li{ 
+float:left;
+list-style-type:none;
+}
+
+
+
+
+
+
+
+
+
+#phoneticlong {
+	margin-bottom: 1em;
+}
+#phoneticlong li, #buttons li {
+	margin-bottom: 0px;
+	margin-top: 4px;
+}
+
+#boxes {
+	font-family: Arial, sans-serif;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 300px;
+}
+#boxes li {
+	cursor: move;
+	position: relative;
+	float: left;
+	margin: 2px 2px 0px 0px;
+	width: 33px;
+	height: 28px;
+	border: 1px solid #000;
+	text-align: center;
+	padding-top: 5px;
+	background-color: #eeeeff;
+}
+
+#twolists td {
+	width: 300px;
+	vertical-align: top;
+}
+#twolists1 li {
+	font-family: sans-serif;
+}
+#twolists2 {
+	border: 1px dashed #fff;
+}
+#twolists2 li {
+	font-family: serif;
+	background-color: #eedddd;
+}
+.inspector {
+	font-size: 11px;
+}

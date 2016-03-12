@@ -1,0 +1,215 @@
+/* CSS Document */
+
+body,td,th {
+    font-family: Georgia;
+    font-size: 13px;
+    color: #2F2F2F;
+}
+body {
+    background-color: #F3F3EE;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#contentArea{
+background-color:#FFFFFF;
+border:1px solid #C6C6C6;
+}
+
+
+/*- Top Navigation--------------------------- */
+
+    #topNav {
+      float:left;
+      width:510px;
+      font-size:18px;
+      line-height:normal;
+      
+      }
+    #topNav ul {
+          margin:0;
+          padding:0px 0px 0px 0px;
+          list-style:none;
+      }
+    #topNav li {
+      display:inline;
+      margin:0;
+      padding:0;
+      }
+    #topNav a {
+      float:left;
+      background:url("../images/site/topMenuNormal.gif") repeat-x left 0px;
+      margin:0;
+      padding:0 0 0 7px;
+      text-decoration:none;
+      
+      }
+    #topNav a span {
+      float:left;
+      display:block;
+      background:url("../images/site/topMenuNormal.gif") repeat-x right 0px;
+      padding:11px 19px 12px 14px;
+      color:#ffffff;
+      border-right:1px solid #6FA7D7;
+      }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #topNav a span {float:none;}
+    
+    #topNav a:hover span {
+      color:#ffffff;
+      }
+    #topNav a:hover {
+      background:url("../images/site/topMenuHover.gif") repeat-x right 0px;   
+      }
+      
+    #topNav a:hover span {
+      background:url("../images/site/topMenuHover.gif") repeat-x right 0px;       
+      }
+
+      #topNav #current a {
+             background:url("../images/site/topMenuHover.gif") repeat-x right 0px;    
+      }
+      #topNav #current a span {
+             background:url("../images/site/topMenuHover.gif") repeat-x right 0px;    
+      }
+      
+      #topNav #demo a {
+              background:url("../images/site/topTabDemo.gif") repeat-x right 0px;   
+      }
+      #topNav #demo a span {
+             background:url("../images/site/topTabDemo.gif") repeat-x right 0px;
+      }
+
+/*--Top Navigation ends--*/
+.menuBorderLeft{
+border-left:1px solid #6FA7D7;
+}
+
+.menuBorderRight{
+border-right:1px solid #6FA7D7;
+}
+.logoPadding{
+padding:20px 30px 10px 30px;
+}
+
+.mainImage{
+background:url(../images/site/mainImage.jpg) no-repeat left top;
+}
+
+.axsysBrings{
+background:url(../images/site/axsysBrings.gif) no-repeat left top;
+color:#0A5ABB;
+font-size:16px;
+}
+
+.footerTicker{
+background:url(../images/site/footerTicker.gif) no-repeat left top;
+}
+
+.footerTickerBackgr{
+background-color:#F8F8F6;
+border-top:1px solid #C6C6C6;
+border-bottom:1px solid #C6C6C6;
+border-right:1px solid #C6C6C6;
+color:#565651;
+}
+
+.tickerGreen{
+color:#2D5205;
+font-size:16px;
+}
+
+#tickertape{
+position:relative;
+layer-background-color:#F8F8F6;
+width:400px;
+height:20px;
+}
+
+#subtickertape{
+background-color:#ffffff;
+position:absolute;
+border: none;
+width:600px;
+height:20px;
+
+}
+
+.subtickertapefont{
+font:bold 12px Verdana;
+text-decoration:none;
+color:white;
+}
+
+.subtickertapefont a{
+color:white;
+text-decoration:none;
+}
+
+
+.span20{
+font-size:20px;
+color:#006CD9;
+margin:0 5px;
+}
+.span12{
+font-size:12px;
+color:#006CD9;
+margin:0 5px;
+}
+
+.spanGreen20{
+color:#497807;
+font-size:20px;
+margin:0 5px;
+}
+
+.spanGreen12{
+color:#497807;
+font-size:12px;
+margin:0 5px;
+}
+
+.blue16{
+color:#0A5ABB;
+font-size:16px;
+margin:0px;
+padding:0;
+}
+
+.divText{
+margin:0px 0px 0px 0px;
+padding:0;
+height:auto;
+border-right:1px dashed #C6C6C6;
+}
+
+.divText p{
+margin:0px;
+padding:0 20px 0 0;
+height:auto;
+}
+
+.iconMore{
+background:url(../images/site/iconMore.jpg) no-repeat right 3px;
+color:#FF6C00;
+font-size:13px;
+width:55px;
+margin:10px 0px;
+}
+
+.iconMore a:link, a:visited{
+color:#FF6C00;
+text-decoration:none;
+}
+.iconMore a:hover{
+color:#0A5ABB;
+text-decoration:none;
+}
+
+.copyright{
+font-size:12px;
+color:#7A7A7A;
+}

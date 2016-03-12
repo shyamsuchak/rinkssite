@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The Organizer - A Complete Project Management Solution - Dashboard</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/organizer-style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="script/date.js"></script>
+<script language="javascript" type="text/javascript" src="script/collapse.js"></script>
+</head>
+
+<body>
+<form action="" method="post" enctype="multipart/form-data" name="form1">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="top"><table width="1003" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+                  <td width="500" align="left" valign="middle"><img src="images/organizer-logo.gif" width="231" height="51" hspace="20" alt="The Organizer" title="The Organizer" /></td>
+    <td align="right" valign="top" style="padding-right:30px"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="34" align="right" valign="top">
+        
+        <table border="0" cellspacing="0" cellpadding="0" style="margin-right:10px">
+          <tr>
+            <td width="5" height="34" align="left" valign="top"><img src="images/user-panel-left.gif" width="5" height="35" alt="" title="" /></td>
+            <td class="user-panel-background"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="22" align="left" valign="middle" class="welcome-user">Welcome Sambit</td>
+                <td width="34" align="center" valign="middle"><a href="#"><img src="images/user-icon.gif" border="0" width="14" height="16" alt="User Profile" title="User Profile" /></a></td>
+                <td width="1"><img src="images/icon-divider.gif" width="1" height="22" alt="" title="" /></td>
+                <td width="34" align="center" valign="middle"><a href="#"><img src="images/user-icon2.gif" border="0" width="14" height="14" alt="Settings" title="Settings" /></a></td>
+                <td width="1"><img src="images/icon-divider.gif" width="1" height="22" alt="" title="" /></td>
+                <td width="34" align="center" valign="middle"><a href="#"><img src="images/user-icon3.gif" border="0" width="12" height="14" alt="Logout" title="Logout" /></a></td>
+              </tr>
+            </table></td>
+            <td width="6" align="left" valign="top"><img src="images/user-panel-right.gif" width="6" height="35" alt="" title="" /></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="53">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="34" align="right" valign="bottom">
+        <div id="tabs" align="right">
+          <ul style="float:right; padding:0px;">
+            <!-- CSS Tabs -->
+            <li><a href="Project.html"><span title="Projects">Projects</span></a></li>
+            <li><a href="notification-inbox.html"><span title="Notification">Notification</span></a></li>
+            <li><a href="project-status.html"><span title="Project Status">Project Status</span></a></li>
+            <li  id="current"><a href="#"><span title="Dashboard">Dashboard</span></a></li>
+            
+          </ul>
+        </div></td>
+      </tr>
+    </table></td>
+  </tr>
+</table></td>
+        </tr>
+        <tr> 
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="386" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="6" height="6" align="left" valign="top"><img src="images/left-top-corner.gif" width="6" height="6" alt="" title="" /></td>
+                        <td height="4" align="left" valign="top" class="main-top-border"><img src="images/blank.gif" alt="" width="" height="4" title="" /></td>
+                      </tr>
+                    </table></td>
+                    
+                    <td valign="top"><table width="100%" border="0" align="right" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="611" height="4" align="left" valign="top" class="main-top-border"><img src="images/blank.gif"  width="" height="4" alt="" title=""/></td>
+                        <td width="6" height="6" align="right" valign="top"><img src="images/right-top-corner.gif" width="6" height="6" alt="" title=""/></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  
+                  
+                  <tr>
+                    <td height="546" colspan="2" align="left" valign="top" class="main-side-border border-right"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                      <tr>
+                        <td height="36" align="left" valign="top"><h2>Dashboard</h2></td>
+                      </tr>
+                       <tr>
+                        <td height="30" align="left" valign="top" class="pageHeader">Share &amp; Discuss</td>
+                      </tr>
+                      
+                       <tr>
+                          <td bgcolor="#E5E5E3" colspan="3"><img src="images/blank.gif" alt="" width="" height="1" title="" /></td>
+                       </tr>
+                       
+                       <tr>
+                              <td height="10" align="left" valign="top">&nbsp;</td>
+                      </tr>
+                      
+                     
+                      
+                      <tr>
+                        <td height="40" align="left" valign="top"><table width="40%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="40%" align="left" valign="top" class="selectProject">Select Project </td>
+                            <td align="left" valign="top"><select name="select6" style="width:180px" class="inputBorder" title="Select Project">
+                              <option>--Select Project--</option>
+                              <option>Ideal Web Development</option>
+                              <option>Project 02</option>
+                            </select></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" align="left" valign="top">&nbsp;</td>
+                            </tr>
+                          <tr>
+                            <td colspan="2" align="left" valign="top" class="mailStatus"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td width="45%" align="left" valign="top">Project:</td>
+                                <td>Ideal Web Development </td>
+                              </tr>
+                              <tr>
+                                <td height="10" colspan="2" align="left" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td align="left" valign="top">Total Disussions: </td>
+                                <td align="left" valign="top">3</td>
+                              </tr>
+                              <tr>
+                                <td height="10" colspan="2" align="left" valign="top"></td>
+                                </tr>
+                              <tr>
+                                <td align="left" valign="top">No. of &nbsp;Shared Files: </td>
+                                <td align="left" valign="top">3</td>
+                              </tr>
+                              <tr>
+                                <td colspan="2" align="left" valign="top" height="10"></td>
+                                </tr>
+                              <tr>
+                                <td align="left" valign="top">Last Update: </td>
+                                <td align="left" valign="top">12:57 PM  13-06-2008</td>
+                              </tr>
+                            </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                      
+                      <tr>
+                        <td height="10" align="left" valign="middle">                       </td></tr>
+                      
+                      <tr>
+                        <td height="2" align="left" valign="middle" bgcolor="#FBDE96">
+                          <img src="images/blank.gif" height="2" width="" border="0" alt="" title=""/></td>
+                        </tr>
+                      <tr>
+                        <td height="10" align="left" valign="middle"></td>
+                        </tr>
+                      <tr>
+                        <td height="10" align="left" valign="top" class="pageHeader">Ideal Web Development </td>
+                      </tr>
+                      <tr>
+                        <td height="10" align="left" valign="top"></td>
+                      </tr>
+                        
+                        <tr>
+                        <td height="10" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="63%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="left" valign="top">
+                                
+                                 <span class="dashboardDateRed">13</span>
+                                 <span class="dashboardDateBlack">Jun 2008</span></td>
+                              </tr>
+                              <tr>
+                                <td height="10" align="left" valign="top"></td>
+                              </tr>
+                              <tr>
+                                  <td bgcolor="#E5E5E3"><img src="images/blank.gif" alt="" width="" height="1" title="" /></td>
+                               </tr>
+                              <tr>
+                                <td height="10" align="left" valign="top"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td width="8%" align="left" valign="top"><img src="images/icon-shareDialog.gif" width="37" height="37" /></td>
+                                    <td width="91%" align="left" valign="top" class="dialogBox"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td align="left" valign="top" class="dialogBoxHeader">Ideal Home Template </td>
+                                        </tr>
+                                      <tr>
+                                        <td height="10"></td>
+                                        </tr>
+                                      <tr>
+                                        <td height="10"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td width="6%" align="left" valign="top" class="dialogBoxSerialNo">01</td>
+    <td colspan="2" align="left" valign="top" class="body-text">Now it's fine</td>
+    </tr>
+                                          <tr>
+                                            <td align="left" valign="top">&nbsp;</td>
+                                            <td width="40%" align="left" valign="top" class="body-text">by Arun, 12:57 PM</td>
+                                            <td align="left" valign="top"><a href="#"><img src="images/icon-Reply.gif" width="14" height="14" alt="Reply" title="Reply" border="0"/></a><img src="images/iconDivider2.gif" width="1" height="14" hspace="10" /><a href="#"><img src="images/icon-Delete.gif" width="16" height="14" alt="Delete" title="Delete" border="0" /></a></td>
+                                          </tr>
+                                        </table></td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <td height="20"></td>
+                                        </tr>
+                                      <tr>
+                                        <td height="10" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td width="6%" align="left" valign="top" class="dialogBoxSerialNo">02</td>
+                                            <td colspan="2" align="left" valign="top" class="body-text">All changes are incorporated in final interface.</td>
+                                          </tr>
+                                          <tr>
+                                            <td align="left" valign="top">&nbsp;</td>
+                                            <td width="40%" align="left" valign="top" class="body-text">by Sambit, 12:40 PM</td>
+                                            <td align="left" valign="top"><a href="#"><img src="images/icon-Reply.gif" width="14" height="14" alt="Reply" title="Reply" border="0"/></a><img src="images/iconDivider2.gif" width="1" height="14" hspace="10" /><a href="#"><img src="images/icon-Delete.gif" width="16" height="14" alt="Delete" title="Delete" border="0" /></a></td>
+                                          </tr>
+                                        </table></td>
+                                        </tr>
+                                      
+                                    </table></td>
+                                    </tr>
+                                </table></td>
+                              </tr>
+                              <tr>
+                                <td height="25" align="left" valign="top"></td>
+                              </tr>
+                              <tr>
+                                <td height="10" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td width="8%" align="left" valign="top"><img src="images/iconFileSharing.gif" width="33" height="28" /></td>
+                                    <td width="91%" align="left" valign="top" class="dialogBox"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                          <td align="left" valign="top" class="dialogBoxHeader">Ideal Home Template </td>
+                                        </tr>
+                                        <tr>
+                                          <td height="10"></td>
+                                        </tr>
+                                        <tr>
+                                          <td height="10"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td width="6%" align="left" valign="top" class="dialogBoxSerialNo">01</td>
+                                                <td colspan="2" align="left" valign="top" class="body-text">Ideal-Home-TemplateV1.jpg</td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left" valign="top">&nbsp;</td>
+                                                <td width="40%" align="left" valign="top" class="body-text">by Sambit, 12:38 PM</td>
+                                                <td align="left" valign="top"><a href="#"><img src="images/icon-Reply.gif" width="14" height="14" alt="Reply" title="Reply" border="0"/></a><img src="images/iconDivider2.gif" width="1" height="14" hspace="10" /><a href="#"><img src="images/icon-Delete.gif" width="16" height="14" alt="Delete" title="Delete" border="0" /></a></td>
+                                              </tr>
+                                          </table></td>
+                                        </tr>
+
+
+                                    </table></td>
+                                  </tr>
+                                </table></td>
+                                </tr>
+                                
+                                <tr>
+                                <td height="25" align="left" valign="top"></td>
+                              </tr>
+                                <tr>
+                                  <td align="left" valign="top"></td>
+                                  </tr>
+                                <tr>
+                                  <td height="25" align="left" valign="top"><span class="dashboardDateRed">10</span> <span class="dashboardDateBlack">Jun 2008</span></td>
+                                  </tr>
+                                <tr>
+                                  <td height="10" align="left" valign="top"></td>
+                                </tr>
+                                
+                                <tr>
+                                  <td bgcolor="#E5E5E3"><img src="images/blank.gif" alt="" width="" height="1" title="" /></td>
+                               </tr>
+                                
+                                <tr>
+                                  <td height="10" align="left" valign="top"></td>
+                                  </tr>
+                                <tr>
+                                  <td height="10" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td width="8%" align="left" valign="top"><img src="images/icon-shareDialog.gif" width="37" height="37" /></td>
+                                      <td width="91%" align="left" valign="top" class="dialogBox"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                          <tr>
+                                            <td align="left" valign="top" class="dialogBoxHeader">Ideal Home Template </td>
+                                          </tr>
+                                          <tr>
+                                            <td height="10"></td>
+                                          </tr>
+
+                                          <tr>
+                                            <td height="10" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                  <td width="6%" align="left" valign="top" class="dialogBoxSerialNo">01</td>
+                                                  <td colspan="2" align="left" valign="top" class="body-text">All changes are incorporated in final interface.</td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="left" valign="top">&nbsp;</td>
+                                                  <td width="40%" align="left" valign="top" class="body-text">by Sambit, 12:40 PM</td>
+                                                  <td align="left" valign="top"><a href="#"><img src="images/icon-Reply.gif" width="14" height="14" alt="Reply" title="Reply" border="0"/></a><img src="images/iconDivider2.gif" width="1" height="14" hspace="10" /><a href="#"><img src="images/icon-Delete.gif" width="16" height="14" alt="Delete" title="Delete" border="0" /></a></td>
+                                                </tr>
+                                            </table></td>
+                                          </tr>
+                                      </table></td>
+                                    </tr>
+                                  </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                  <td height="25" align="left" valign="top"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="10" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td width="8%" align="left" valign="top"><img src="images/iconFileSharing.gif" width="33" height="28" /></td>
+                                        <td width="91%" align="left" valign="top" class="dialogBox"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td align="left" valign="top" class="dialogBoxHeader">Ideal Home Template </td>
+                                            </tr>
+                                            <tr>
+                                              <td height="10"></td>
+                                            </tr>
+                                            <tr>
+                                              <td height="10"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td width="6%" align="left" valign="top" class="dialogBoxSerialNo">01</td>
+                                                    <td colspan="2" align="left" valign="top" class="body-text">Ideal-Home-TemplateV1.jpg</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="left" valign="top">&nbsp;</td>
+                                                    <td width="40%" align="left" valign="top" class="body-text">by Sambit, 12:38 PM</td>
+                                                    <td align="left" valign="top"><a href="#"><img src="images/icon-Reply.gif" width="14" height="14" alt="Reply" title="Reply" border="0"/></a><img src="images/iconDivider2.gif" width="1" height="14" hspace="10" /><a href="#"><img src="images/icon-Delete.gif" width="16" height="14" alt="Delete" title="Delete" border="0" /></a></td>
+                                                  </tr>
+                                              </table></td>
+                                            </tr>
+                                        </table></td>
+                                      </tr>
+                                    </table></td>
+                                    </tr>
+                                  <tr>
+                                    <td height="10" align="left" valign="top"></td>
+                                    </tr>
+                                
+                            </table></td>
+                            <td width="2%">&nbsp;</td>
+                            <td width="35%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="left" valign="top" class="greyBox"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td colspan="2" align="left" valign="top" class="blueLarge">Add Comment &amp; File</td>
+                                    </tr>
+                                  <tr>
+                                    <td height="25" colspan="2">&nbsp;</td>
+                                    </tr>
+                                  <tr>
+                                    <td width="35%" height="30" align="left" valign="top" class="body-text">Title:</td>
+                                    <td width="65%" align="left" valign="top"><input type="text" name="textfield4" title="Project Title" style="width:190px;"/></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="30" align="left" valign="top" class="body-text">Attach a file: </td>
+                                    <td align="left" valign="top">
+                                      <input type="file" name="file" alt="Browse File" title="Browse File" />                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td height="30" align="left" valign="top" class="body-text">File Type: </td>
+                                    <td align="left" valign="top">
+                                      <select name="select2" style="width:140px" class="inputBorder" title="File Type">
+                                        <option>--Select Project--</option>
+                                        <option>Project 01</option>
+                                        <option>Project 02</option>
+                                      </select>                                   </td>
+                                  </tr>
+                                  <tr>
+                                    <td height="30" align="left" valign="top" class="body-text">Post Comment: </td>
+                                    <td align="left" valign="top"><textarea name="textarea" cols="32" rows="4" class="inputBorder" title="Post Comment" style="padding:3px; margin-bottom:10px;"></textarea></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="30" rowspan="2" align="left" valign="top" class="body-text">Notify by e-mail: </td>
+                                    <td height="30" align="left" valign="top">
+                                      <input name="checkbox" type="checkbox" class="no-border" value="checkbox" alt="Click to check" title="Click to check" />
+                                    Project Team</td>
+                                  </tr>
+                                  <tr>
+                                    <td height="30" align="left" valign="top"><input name="checkbox2" type="checkbox" class="no-border" value="checkbox" alt="Click to check" title="Click to check" />
+                                      Project Client </td>
+                                  </tr>
+                                  <tr>
+                                    <td height="30" colspan="2" align="left" valign="top" class="body-text">
+                                      <input name="Submit" type="submit" class="inputBtn2" value="Submit" alt="Submit" title="Submit" />
+                                      <input name="Submit2" type="reset" class="inputBtn2" value="Reset" alt="Reset" title="Reset" />                                    </td>
+                                    </tr>
+                                </table></td>
+                              </tr>
+                              <tr>
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="left" valign="top" class="mailStatus"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td width="90%" height="25" align="left" valign="top" class="sharedFiles">All Shared Files </td>
+                                    <td align="right" valign="top"><img src="images/openBtn.gif" width="23" height="20" border="0" alt="Close" title="Close" id="btnCollapse" onclick="javascript:ShowSharedFiles();"/></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="110" align="left" valign="bottom" id="divSharedFiles" style="display:none; width: 100%;">
+                                    
+                                    <div id="sharedFile">
+                                         <ul>
+                                           <li>Ideal-Home-TemplateV1.jpg</li>
+                                           <li>Corporate-profile.doc</li>
+                                           <li>Ideal-Brochure.pdf</li>
+                                         </ul>
+                                    </div>  
+                                    </td>
+                                    <td align="right" valign="top">&nbsp;</td>
+                                  </tr>
+                                </table></td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                        
+                    </table></td>
+                    </tr>
+                  
+                  
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="6"><img src="images/left-bottom-corner.gif" width="6" height="6" alt="" title="" /></td>
+                        <td height="4" align="left" valign="bottom" class="main-bottom-border"><img src="images/blank.gif" alt="" width="" height="4" title="" /></td>
+                      </tr>
+                    </table></td>
+                   
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="611" class="main-bottom-border"><img src="images/blank.gif" alt="" width="" height="4" title="" /></td>
+                        <td width="6" align="right" valign="top"><img src="images/right-bottom-corner.gif" width="6" height="6" alt="" title="" /></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+              
+            </table></td>
+        </tr>
+        <tr> 
+          <td height="40" align="right" valign="middle" class="copyright">&copy; 2007-08 Axsys Technologies Limited. All rights reserved.</td>
+        </tr>
+        
+        
+      </table></td>
+  </tr>
+</table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+[06-Mar-2015 18:28:57 UTC] PHP Warning:  include(config/connection.php): failed to open stream: No such file or directory in /home/acmepharma/public_html/includes/nav.php on line 1
+[06-Mar-2015 18:28:57 UTC] PHP Warning:  include(): Failed opening 'config/connection.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/acmepharma/public_html/includes/nav.php on line 1
+[06-Mar-2015 18:31:10 UTC] PHP Warning:  mysql_query(): Access denied for user 'acmepharma'@'localhost' (using password: NO) in /home/acmepharma/public_html/includes/footertop.php on line 5
+[06-Mar-2015 18:31:10 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/acmepharma/public_html/includes/footertop.php on line 5
+[06-Mar-2015 18:31:10 UTC] PHP Warning:  mysql_fetch_object(): supplied argument is not a valid MySQL result resource in /home/acmepharma/public_html/includes/footertop.php on line 6
+[07-Mar-2015 20:12:23 UTC] PHP Warning:  include(config/connection.php): failed to open stream: No such file or directory in /home/acmepharma/public_html/includes/nav.php on line 1
+[07-Mar-2015 20:12:23 UTC] PHP Warning:  include(): Failed opening 'config/connection.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/acmepharma/public_html/includes/nav.php on line 1
+[19-Apr-2015 03:14:52 UTC] PHP Warning:  include(config/connection.php): failed to open stream: No such file or directory in /home/acmepharma/public_html/includes/nav.php on line 1
+[19-Apr-2015 03:14:52 UTC] PHP Warning:  include(): Failed opening 'config/connection.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/acmepharma/public_html/includes/nav.php on line 1
+[19-Apr-2015 03:15:25 UTC] PHP Warning:  include(config/connection.php): failed to open stream: No such file or directory in /home/acmepharma/public_html/includes/nav.php on line 1
+[19-Apr-2015 03:15:25 UTC] PHP Warning:  include(): Failed opening 'config/connection.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/acmepharma/public_html/includes/nav.php on line 1
+[19-Apr-2015 03:16:01 UTC] PHP Warning:  mysql_query(): Access denied for user 'acmepharma'@'localhost' (using password: NO) in /home/acmepharma/public_html/includes/footertop.php on line 5
+[19-Apr-2015 03:16:01 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/acmepharma/public_html/includes/footertop.php on line 5
+[19-Apr-2015 03:16:01 UTC] PHP Warning:  mysql_fetch_object(): supplied argument is not a valid MySQL result resource in /home/acmepharma/public_html/includes/footertop.php on line 6

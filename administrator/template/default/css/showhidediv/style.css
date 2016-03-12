@@ -1,0 +1,93 @@
+.toggler {
+	color: #2d2d2d;
+	margin: 0;
+	padding: 10px 25px;
+	background: #ffffff;
+	/*border-bottom: 1px solid #E5E5E3;*/
+	border-right: 0px solid #99CAD2;
+	border-top: 0px solid #99CAD2;
+	border-left: 0px solid #99CAD2;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: 'Georgia', Verdana, sans-serif;
+	text-align:left;
+	height:14px;
+	width:86%;
+	
+	
+}
+.toggler a{text-decoration:none}
+
+.element {
+	height:20px;
+	vertical-align:middle;
+	
+}
+
+.element p {
+	height:20px;
+	margin: 0;
+	padding: 0px;
+	text-align:right;
+	vertical-align:top;
+	background-color:#527E8F;
+}
+
+.float-right {
+	padding:10px 20px;
+	float:right;
+}
+
+blockquote {
+	text-style:italic;
+	padding:5px 0 5px 30px;
+}
+
+#colour{
+color: rgb(34, 34, 34);
+}
+
+
+#block1 span{margin:0; padding:0; height:32px;float:left; padding-right:0px}
+
+span ul{margin: 0px 0px 0px 0px;
+font-size: 12px;
+font-family:"Trebuchet MS", Verdana, Arial, Tahoma;
+color:#2d2d2d; 
+text-align:left; 
+text-decoration:none;
+font-weight:bold;
+line-height:32px;
+height:auto;
+width:254px;
+_width:254px;
+padding:0px;
+}
+
+span ul {list-style: none;}
+span ul li{border-bottom:1px solid #E5E5E3;padding:0px 10px 0px 20px}
+
+span ul li a:link, a:visited{color:#2d2d2d; text-decoration:none; }
+span ul li a:hover{text-decoration:none; color:#FFF5BA;}
+
+
+#menu-structure{
+width:254px;
+height:auto;
+vertical-align:middle;
+}
+
+
+.menu-top{
+background:url(../../images/menu-top.jpg) no-repeat left top;
+width:254px;
+height:5px;
+_height:5px;
+}
+
+.menu-bottom{
+background:url(../../images/menu-bottom.jpg) no-repeat left top;
+width:254px;
+height:5px;
+_height:5px;
+}

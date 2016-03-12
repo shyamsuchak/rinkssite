@@ -1,0 +1,305 @@
+/*#------------------------------------------------------------------------#*/
+/*# Index Page JavaScript                                                  #*/
+/*# ---------------------------------------------------------------------- #*/
+/*# Kre8iveminds                                                         	 #*/
+/*# 16, Gangadhar Babu Lane, Near Central Metro                              #*/
+/*# Kolkata - 700012                                                         #*/
+/*# Websites:  http://www.kre8iveminds.com                                   #*/
+/*#------------------------------------------------------------------------#*/
+
+/* BeGIN : Pagination Record Button Function */
+function FuncChangePage(PageNo)
+ {
+   document.getElementById('PageNo').value = PageNo;
+   document.form_name.submit();
+ }
+/* END   : Pagination Record Button Function */
+// BEGIN : View Record Details Function
+function FuncRecordDetails()
+ {
+   alert("Coming Soon...");
+ }
+// END   : View Record Details Function 
+/* BeGIN : Sort Record Up Button Function */
+function FuncRecordSortUp(RecordID)
+ {
+   document.getElementById("DataID").value = RecordID;
+   document.getElementById("PageAction").value = "SortUp";
+   document.form_name.action = "slideshow.php?Action=ActionSortUp";
+   document.form_name.submit();
+ }
+/* END   : Sort Record Up Button Function */  
+/* BeGIN : Sort Record Down Button Function */
+function FuncRecordSortDown(RecordID)
+ {
+   document.getElementById("DataID").value = RecordID;
+   document.getElementById("PageAction").value = "SortDown";
+   document.form_name.action = "slideshow.php?Action=ActionSortDown";
+   document.form_name.submit();
+ }
+/* END   : Sort Record Down Button Function */  
+/* BeGIN : Publish Record Button Function */
+function FuncEnableRecord(RecordID)
+ {
+   var chk=confirm("Are you sure want to publish the selected record?");
+   if (chk==true)
+    {
+      document.getElementById("DataID").value = RecordID;
+      document.getElementById("PageAction").value = "EnableRecord";
+      document.form_name.action = "slideshow.php?Action=ActionEnableRecord";
+      document.form_name.submit();
+    }
+ }
+/* END   : Publish Record Button Function */
+/* BeGIN : Unpublish Record Button Function */
+function FuncDisableRecord(RecordID)
+ {
+   var chk=confirm("Are you sure want to unpublish the selected record?");
+   if (chk==true)
+    {
+      document.getElementById("DataID").value = RecordID;
+      document.getElementById("PageAction").value = "DisableRecord";
+      document.form_name.action = "slideshow.php?Action=ActionDisableRecord";
+      document.form_name.submit();
+    }
+ }
+/* END   : Unpublish Record Button Function */
+/* BeGIN : Publish Selected Records Button Function */
+ function FuncEnableAllRecord()
+  {
+    var cnt = 0;
+    var RecordID;
+    var frm = document.forms['form_name'];
+    var elms = document.getElementsByTagName('input');
+    for(var i = 0; i < elms.length; ++i)
+     {
+       if (elms[i].type == "checkbox")
+        {
+          if (elms[i].name == "checkitem[]" && elms[i].checked)
+           {
+             RecordID = elms[i].value;
+             cnt++;
+           }
+        }
+     }
+    if(cnt==0)
+     {
+       alert("Select the record you wish to publish.");
+     }
+    else
+     {       
+       var chk=confirm("Are you sure want to publish the selected record(s)?");
+       if (chk==true)
+        {                            
+          document.getElementById("DataID").value = 0;
+          document.getElementById("PageAction").value = "EnableAllRecord"; 
+          document.form_name.action = "slideshow.php?Action=ActEnableAllRecord";
+          document.form_name.submit();
+        }
+     }
+  }
+/* END   : Publish Selected Records Button Function */
+/* BeGIN : Unpublish Selected Records Button Function */
+ function FuncDisableAllRecord()
+  {
+    var cnt = 0;
+    var RecordID;
+    var frm = document.forms['form_name'];
+    var elms = document.getElementsByTagName('input');
+    for(var i = 0; i < elms.length; ++i)
+     {
+       if (elms[i].type == "checkbox")
+        {
+          if (elms[i].name == "checkitem[]" && elms[i].checked)
+           {
+             RecordID = elms[i].value;
+             cnt++;
+           }
+        }
+     }
+    if(cnt==0)
+     {
+       alert("Select the record you wish to unpublish.");
+     }
+    else
+     {       
+       var chk=confirm("Are you sure want to unpublish the selected record(s)?");
+       if (chk==true)
+        {
+          document.getElementById("DataID").value = '';
+          document.getElementById("PageAction").value = "DisableAllRecord";
+          document.form_name.action = "slideshow.php?Action=ActDisableAllRecord";
+          document.form_name.submit();
+        }
+     }
+  }
+/* END   : Unpublish Selected Records Button Function */
+
+/* BeGIN : Cancel Record Button Function */
+function FuncCancelRecord()
+ {
+   document.getElementById("DataID").value = '';
+   document.getElementById("PageAction").value = "";
+   document.form_name.submit();
+ }
+/* END   : Cancel Record Button Function */  
+
+/* BeGIN : Delete Record Button Function */
+ function FuncDeleteRecord()
+  {        
+    var cnt = 0;
+    var RecordID;
+    var frm = document.forms['form_name'];
+    var elms = document.getElementsByTagName('input');
+    for(var i = 0; i < elms.length; ++i)
+     {
+       if (elms[i].type == "checkbox")
+        {
+          if (elms[i].name == "checkitem[]" && elms[i].checked)
+           {
+             RecordID = elms[i].value;
+             cnt++;
+           }
+        }
+     }
+    if(cnt==0)
+     {
+       alert("Select the record you wish to delete.");
+     }
+    else
+     {       
+       var chk=confirm("Are you sure want to delete the selected record(s)?");
+       if (chk==true)
+        {                            
+          document.getElementById("DataID").value = 0;
+          document.getElementById("PageAction").value = "Delete";
+          document.form_name.action = "slideshow.php?Action=ActionDelete";
+          document.form_name.submit();
+        }
+     }
+  }
+/* END   : Delete Record Button Function */
+
+/* BeGIN : Edit Record Button Function */
+ function FuncEditRecord()
+  {                 
+    var cnt = 0;
+    var RecordID;
+    var frm = document.forms['form_name'];
+    var elms = document.getElementsByTagName('input');
+    for(var i = 0; i < elms.length; ++i)
+     {
+       if (elms[i].type == "checkbox")
+        {
+          if (elms[i].name == "checkitem[]" && elms[i].checked)
+           {
+             RecordID = elms[i].value;
+             cnt++;
+           }
+        }
+     }
+    if(cnt==0)
+     {
+       alert("Select the record you wish to edit.");  
+       //return false;
+     }
+    else if(cnt!=1)
+     {
+       alert("Only one record can be edited at a time. Multiple selection not allowed."); 
+       //return false;
+     }
+    else
+     {
+       document.getElementById("DataID").value = RecordID;
+       document.getElementById("PageAction").value = "Edit";
+       document.form_name.submit();
+     }
+  }
+/* END   : Edit Record Button Function */  
+/* BeGIN : Save Edited Record Button Function */
+ function FuncSaveEditedRecord()
+  {
+      if(document.getElementById('slideshow_title').value=="")
+     {
+       alert('Please enter Slideshow Title.');
+       document.getElementById('slideshow_title').focus();
+     }
+	else if(document.getElementById('slideshow_url').value=="")
+     {
+       alert('Please Select slideshow Url.');
+       document.getElementById('slideshow_url').focus();
+     } 
+	else if(document.getElementById('img').value!="" && !isvalidimgfile(document.getElementById('img').value))
+     {
+       alert('Please enter Valid slideshow Image.');
+	   document.getElementById('img').focus();
+	 }
+    else
+     {
+       document.getElementById("PageAction").value = "SaveData";   
+       document.form_name.action = "slideshow.php?Action=ActionSaveData";
+       document.form_name.submit();
+     }
+  }
+/* END   : Save Edited Record Button Function */  
+/* BeGIN : Add New Record Button Function */  
+ function FuncAddNewRecord()
+  {
+    document.getElementById("DataID").value = '';
+    document.getElementById("PageAction").value = "AddNew";
+    document.form_name.action = "slideshow.php";
+    document.form_name.submit();
+  }
+/* END   : Add New Record Button Function */
+/* BeGIN : Save Record Button Function */
+ function FuncSaveNewRecord()
+  {              
+     if(document.getElementById('slideshow_title').value=="")
+     {
+       alert('Please enter slideshow Title.');
+       document.getElementById('slideshow_title').focus();
+     }
+	else if(document.getElementById('slideshow_url').value=="")
+     {
+       alert('Please Select slideshow Url.');
+       document.getElementById('slideshow_url').focus();
+     } 
+	  else if(document.getElementById('img').value=="")
+     {
+       alert('Please enter slideshow Image.');
+	   document.getElementById('img').focus();
+     }
+	else if(document.getElementById('img').value!="" && !isvalidimgfile(document.getElementById('img').value))
+     {
+       alert('Please enter Valid slideshow Image.');
+	   document.getElementById('img').focus();
+	 }
+    else
+     {
+       document.getElementById("PageAction").value = "SaveNewData";
+       document.form_name.action = "slideshow.php?Action=ActionSaveNewData";
+       document.form_name.submit();
+     }
+  }
+/* END   : Save Record Button Function */     
+/* BeGIN : Save Record Button Function */
+function FuncRecordHelp()
+ {
+   alert('Comming soon...');
+ }
+ 
+ function isvalidimgfile(value)
+{
+	var fileexpr=/^.*(\.(gif|jpg|jpeg|png|GIF|JPG|JPEG|PNG))$/;
+	return fileexpr.test(value);
+}
+
+/* END   : Save Record Button Function */
+function SingleFuncEditRecord(id)
+  {                 
+      var RecordID;
+       RecordID = id;
+       document.getElementById("DataID").value = RecordID;
+       document.getElementById("PageAction").value = "Edit";
+       document.form_name.submit();
+  }
